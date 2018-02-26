@@ -1,0 +1,543 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyPaint.ico"
+
+IDR_MyPaintTYPE         ICON                    "res\\MyPaintDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_ELEMENTS_LINE
+    BUTTON      ID_ELEMENTS_RE
+    BUTTON      ID_ELEMENTS_ELLIPSE
+    BUTTON      ID_ELEMENTS_CURVE
+    SEPARATOR
+    BUTTON      ID_COLOR_BLACK
+    BUTTON      ID_COLOR_WHITE
+    BUTTON      ID_COLOR_RED
+    BUTTON      ID_COLOR_GREEN
+    BUTTON      ID_COLOR_BLUE
+    SEPARATOR
+    BUTTON      ID_WIDTH_1PX
+    BUTTON      ID_WIDTH_2PX
+    BUTTON      ID_WIDTH_5PX
+    BUTTON      ID_WIDTH_10PX
+    BUTTON      ID_WIDTH_20PX
+    BUTTON      ID_WIDTH_50PX
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О проекте MyPaint...",       ID_APP_ABOUT
+    END
+    POPUP "&Elements"
+    BEGIN
+        MENUITEM "&Line",                       ID_ELEMENTS_LINE
+        MENUITEM "&Rectangle",                  ID_ELEMENTS_RE
+        MENUITEM "E&llipse",                    ID_ELEMENTS_ELLIPSE
+        MENUITEM "&Curve",                      ID_ELEMENTS_CURVE
+    END
+    POPUP "&Color"
+    BEGIN
+        MENUITEM "&Black",                      ID_COLOR_BLACK
+        MENUITEM "&White",                      ID_COLOR_WHITE
+        MENUITEM "&Red",                        ID_COLOR_RED
+        MENUITEM "&Green",                      ID_COLOR_GREEN
+        MENUITEM "B&lue",                       ID_COLOR_BLUE
+    END
+    POPUP "&Width"
+    BEGIN
+        MENUITEM "1px",                         ID_WIDTH_1PX
+        MENUITEM "2px",                         ID_WIDTH_2PX
+        MENUITEM "5px",                         ID_WIDTH_5PX
+        MENUITEM "10px",                        ID_WIDTH_10PX
+        MENUITEM "20px",                        ID_WIDTH_20PX
+        MENUITEM "50px",                        ID_WIDTH_50PX
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 375, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О проекте MyPaint"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,140,15,20,20
+    LTEXT           "MyPaint, версия 1.0",IDC_STATIC,163,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,164,25,114,8
+    DEFPUSHBUTTON   "ОК",IDOK,163,158,50,14,WS_GROUP
+    CONTROL         "",IDC_TEXTBOX1,"{8BD21D10-EC42-11CE-9E0D-00AA006002F3}",WS_TABSTOP,7,38,361,14
+    CONTROL         "",IDC_TEXTBOX2,"{8BD21D10-EC42-11CE-9E0D-00AA006002F3}",WS_TABSTOP,7,51,361,13
+    CONTROL         "",IDC_TEXTBOX3,"{8BD21D10-EC42-11CE-9E0D-00AA006002F3}",WS_TABSTOP,7,62,361,13
+    CONTROL         "",IDC_TEXTBOX4,"{8BD21D10-EC42-11CE-9E0D-00AA006002F3}",WS_TABSTOP,7,74,361,13
+    CONTROL         "",IDC_TEXTBOX5,"{8BD21D10-EC42-11CE-9E0D-00AA006002F3}",WS_TABSTOP,7,85,361,14
+    LTEXT           "by Alexander",IDC_STATIC,324,102,44,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Название организации>"
+            VALUE "FileDescription", "MyPaint"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MyPaint.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Название организации>.  Все права защищены."
+            VALUE "OriginalFilename", "MyPaint.exe"
+            VALUE "ProductName", "TODO: <Название продукта>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ABOUTBOX DLGINIT
+BEGIN
+    IDC_TEXTBOX1, 0x37a, 279, 0
+0x0000, 0x0000, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0000, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x0000, 0xd002, 0x0100, 0x4001, 0x0080, 0x0000, 0x1b00, 0x8048, 
+0xb62c, 0x0000, 0x0400, 0x0038, 0x6100, 0x0002, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x1f00, 0x4004, 0x3e04, 0x4104, 
+0x4204, 0x3004, 0x4f04, 0x2004, 0x3f00, 0x4004, 0x3e04, 0x3304, 0x4004, 
+0x3004, 0x3c04, 0x3c04, 0x3004, 0x2004, 0x3400, 0x3b04, 0x4f04, 0x2004, 
+0x3f00, 0x4004, 0x3804, 0x3c04, 0x3804, 0x4204, 0x3804, 0x3204, 0x3d04, 
+0x3e04, 0x3304, 0x3e04, 0x2004, 0x4000, 0x3804, 0x4104, 0x3e04, 0x3204, 
+0x3004, 0x3d04, 0x3804, 0x4f04, 0x2e04, 0x2000, 0x2000, 0x0000, 0x0000, 
+0x1802, 0x3500, 0x0000, 0x0600, 0x0000, 0xa580, 0x0000, 0xcc00, 0x0002, 
+0x5400, 0x6861, 0x6d6f, 0x0061, "\000" 
+    IDC_TEXTBOX2, 0x37a, 271, 0
+0x0000, 0x0000, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0000, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x0000, 0xc802, 0x0100, 0x4001, 0x0080, 0x0000, 0x1b00, 0x8048, 
+0xb02c, 0x0000, 0x0400, 0x0038, 0x2c00, 0x0002, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x1f00, 
+0x3504, 0x4004, 0x3204, 0x4b04, 0x3904, 0x2004, 0x3d00, 0x3004, 0x3104, 
+0x3e04, 0x4004, 0x2004, 0x3f00, 0x3504, 0x4004, 0x3504, 0x3a04, 0x3b04, 
+0x4e04, 0x4704, 0x3004, 0x4204, 0x3504, 0x3b04, 0x3504, 0x3904, 0x2004, 
+0x3c00, 0x3e04, 0x3604, 0x3d04, 0x3e04, 0x2004, 0x3800, 0x4104, 0x3f04, 
+0x3e04, 0x3b04, 0x4c04, 0x3704, 0x3e04, 0x3204, 0x3004, 0x4204, 0x4c04, 
+0x2004, 0x3400, 0x3b04, 0x4f04, 0x2004, 0x3200, 0x4b04, 0x3104, 0x3e04, 
+0x4004, 0x3004, 0x2004, 0x4d00, 0x3b04, 0x3504, 0x3c04, 0x3504, 0x3d04, 
+0x4204, 0x3004, 0x2004, 0x4000, 0x3804, 0x4104, 0x3e04, 0x3204, 0x3004, 
+0x3d04, 0x3804, 0x4f04, 0x2004, 0x0000, 0x1802, 0x3500, 0x0000, 0x0600, 
+0x0000, 0xa580, 0x0000, 0xcc00, 0x0002, 0x5400, 0x6861, 0x6d6f, 0x2c61, 
+"\040" 
+    IDC_TEXTBOX3, 0x37a, 267, 0
+0x0000, 0x0000, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0000, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x0000, 0xc402, 0x0100, 0x4001, 0x0080, 0x0000, 0x1b00, 0x8048, 
+0xac2c, 0x0000, 0x0400, 0x0038, 0x2c00, 0x0002, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x1200, 0x4204, 0x3e04, 
+0x4004, 0x3e04, 0x3904, 0x2004, 0x3d00, 0x3004, 0x3104, 0x3e04, 0x4004, 
+0x2004, 0x2d00, 0x2000, 0x3200, 0x4b04, 0x3104, 0x3e04, 0x4004, 0x2004, 
+0x4600, 0x3204, 0x3504, 0x4204, 0x3004, 0x2004, 0x3b00, 0x3804, 0x3d04, 
+0x3804, 0x3904, 0x0004, 0x1802, 0x3500, 0x0000, 0x0600, 0x0000, 0xa580, 
+0x0000, 0xcc00, 0x0002, 0x5400, 0x6861, 0x6d6f, 0x0061, "\000" 
+    IDC_TEXTBOX4, 0x37a, 267, 0
+0x0000, 0x0000, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0000, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x0000, 0xc402, 0x0100, 0x4001, 0x0080, 0x0000, 0x1b00, 0x8048, 
+0xac2c, 0x0000, 0x0400, 0x0038, 0x2c00, 0x0002, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 0x2000, 
+0x2000, 0x2000, 0x2000, 0x2000, 0x2200, 0x4004, 0x3504, 0x4204, 0x3804, 
+0x3904, 0x2004, 0x3d00, 0x3004, 0x3104, 0x3e04, 0x4004, 0x2004, 0x2d00, 
+0x2000, 0x3200, 0x4b04, 0x3104, 0x3e04, 0x4004, 0x2004, 0x4200, 0x3e04, 
+0x3b04, 0x4904, 0x3804, 0x3d04, 0x4b04, 0x2004, 0x3b00, 0x3804, 0x3d04, 
+0x3804, 0x3904, 0x0004, 0x1802, 0x3500, 0x0000, 0x0600, 0x0000, 0xa580, 
+0x0000, 0xcc00, 0x0002, 0x5400, 0x6861, 0x6d6f, 0x2c61, "\040" 
+    IDC_TEXTBOX5, 0x37a, 275, 0
+0x0000, 0x0000, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0000, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x0000, 0xcc02, 0x0100, 0x4001, 0x0080, 0x0000, 0x1b00, 0x8048, 
+0xb22c, 0x0000, 0x0400, 0x0038, 0x6100, 0x0002, 0x2000, 0x2000, 0x2200, 
+0x3004, 0x3a04, 0x3604, 0x3504, 0x2004, 0x3f00, 0x3504, 0x4004, 0x3504, 
+0x3a04, 0x3b04, 0x4e04, 0x4704, 0x3504, 0x3d04, 0x3804, 0x3504, 0x2004, 
+0x3200, 0x4b04, 0x4804, 0x3504, 0x3f04, 0x3504, 0x4004, 0x3504, 0x4704, 
+0x3804, 0x4104, 0x3b04, 0x3504, 0x3d04, 0x3d04, 0x4b04, 0x4504, 0x2004, 
+0x4d00, 0x3b04, 0x3504, 0x3c04, 0x3504, 0x3d04, 0x4204, 0x3e04, 0x3204, 
+0x2004, 0x3200, 0x3e04, 0x3704, 0x3c04, 0x3e04, 0x3604, 0x3d04, 0x3e04, 
+0x2004, 0x3800, 0x3704, 0x2004, 0x3300, 0x3b04, 0x3004, 0x3204, 0x3d04, 
+0x3e04, 0x3304, 0x3e04, 0x2004, 0x3c00, 0x3504, 0x3d04, 0x4e04, 0x2004, 
+0x3e00, 0x3a04, 0x3d04, 0x3004, 0x2004, 0x3f00, 0x4004, 0x3e04, 0x3304, 
+0x4004, 0x3004, 0x3c04, 0x3c04, 0x4b04, 0x2004, 0x0000, 0x1802, 0x3500, 
+0x0000, 0x0600, 0x0000, 0xa580, 0x0000, 0xcc00, 0x0002, 0x5400, 0x6861, 
+0x6d6f, 0x0061, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "Не удалось выполнить инициализацию OLE.  Убедитесь в том, что используются правильные версии библиотек OLE."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "MyPaint\n\nMyPaint\nMyPaint Files (*.bmp)\n.bmp\nMyPaint.Document\nMyPaint.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MyPaint"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Создание нового документа\nСоздать"
+    ID_FILE_OPEN            "Открытие существующего документа\nОткрыть"
+    ID_FILE_CLOSE           "Закрытие активного документа\nЗакрыть"
+    ID_FILE_SAVE            "Сохранение активного документа\nСохранить"
+    ID_FILE_SAVE_AS         "Сохранение активного документа под новым именем\nСохранить как"
+    ID_FILE_PAGE_SETUP      "Изменение параметров печати\nПараметры страницы"
+    ID_FILE_PRINT_SETUP     "Изменение принтера и параметров печати\nНастройка печати"
+    ID_FILE_PRINT           "Печать активного документа\nПечать"
+    ID_FILE_PRINT_DIRECT    "Печать активного документа с использованием текущих параметров\nБыстрая печать"
+    ID_FILE_PRINT_PREVIEW   "Просмотр документа в полностраничном режиме\nПредварительный просмотр"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Вывод сведений о программе, ее версии и авторских правах\nО программе"
+    ID_APP_EXIT             "Завершение работы приложения с запросом на сохранение документов\nВыход"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Открытие данного документа"
+    ID_FILE_MRU_FILE2       "Открытие данного документа"
+    ID_FILE_MRU_FILE3       "Открытие данного документа"
+    ID_FILE_MRU_FILE4       "Открытие данного документа"
+    ID_FILE_MRU_FILE5       "Открытие данного документа"
+    ID_FILE_MRU_FILE6       "Открытие данного документа"
+    ID_FILE_MRU_FILE7       "Открытие данного документа"
+    ID_FILE_MRU_FILE8       "Открытие данного документа"
+    ID_FILE_MRU_FILE9       "Открытие данного документа"
+    ID_FILE_MRU_FILE10      "Открытие данного документа"
+    ID_FILE_MRU_FILE11      "Открытие данного документа"
+    ID_FILE_MRU_FILE12      "Открытие данного документа"
+    ID_FILE_MRU_FILE13      "Открытие данного документа"
+    ID_FILE_MRU_FILE14      "Открытие данного документа"
+    ID_FILE_MRU_FILE15      "Открытие данного документа"
+    ID_FILE_MRU_FILE16      "Открытие данного документа"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Переход к следующей области окна\nСледующая область"
+    ID_PREV_PANE            "Возврат к предыдущей области окна\nПредыдущая область"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Разделение активного окна на области\nРазделить"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Удаление выделенного фрагмента\nУдалить"
+    ID_EDIT_CLEAR_ALL       "Полное удаление содержимого документа\nУдалить все"
+    ID_EDIT_COPY            "Копирование выделенного фрагмента в буфер обмена\nКопировать"
+    ID_EDIT_CUT             "Удаление выделенного фрагмента в буфер обмена\nВырезать"
+    ID_EDIT_FIND            "Поиск указанного текста\nНайти"
+    ID_EDIT_PASTE           "Вставка содержимого буфера обмена\nВставить"
+    ID_EDIT_REPEAT          "Повторение последнего действия\nПовторить"
+    ID_EDIT_REPLACE         "Замена заданного текста другим текстом\nЗаменить"
+    ID_EDIT_SELECT_ALL      "Выделение всего документа\nВыделить все"
+    ID_EDIT_UNDO            "Отмена последнего действия\nОтменить"
+    ID_EDIT_REDO            "Повторное выполнение последнего отмененного действия\nВернуть"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Отображение или скрытие панели инструментов\nПанель инструментов"
+    ID_VIEW_STATUS_BAR      "Показать или скрыть строку состояния\n Переключение строки состояния"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Изменение размера окна"
+    AFX_IDS_SCMOVE          "Изменение положения окна"
+    AFX_IDS_SCMINIMIZE      "Свертывание окна в значок"
+    AFX_IDS_SCMAXIMIZE      "Развертывание окна до полного размера"
+    AFX_IDS_SCNEXTWINDOW    "Переход к следующему окну документа"
+    AFX_IDS_SCPREVWINDOW    "Переход к предыдущему окну документа"
+    AFX_IDS_SCCLOSE         "Закрытие активного окна с запросом на сохранение документов"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Восстановление исходных размеров окна"
+    AFX_IDS_SCTASKLIST      "Переход к списку задач"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Выход из режима предварительного просмотра\nОтменить просмотр"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ELEMENTS_LINE        "Элемент Линия\nЛиния"
+    ID_ELEMENTS_RE          "Элемент Четырехугольник\nЧетырехугольник"
+    ID_ELEMENTS_ELLIPSE     "Элемент Эллипс\nЭллипс"
+    ID_ELEMENTS_CURVE       "Элемент Кривая\nКривая"
+    ID_COLOR_BLACK          "Черные Линии\nЧерный"
+    ID_COLOR_WHITE          "Белые Линии\nБелый"
+    ID_COLOR_RED            "Красные Линии\nКрасный"
+    ID_COLOR_GREEN          "Зеленые Линии\nЗеленый"
+    ID_COLOR_BLUE           "Синие Линии\nСиний"
+    ID_WIDTH_1PX            "1px\n1px"
+    ID_WIDTH_2PX            "2px\n2px"
+    ID_WIDTH_5PX            "5px\n5px"
+    ID_WIDTH_10PX           "10px\n10px"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WIDTH_20PX           "20px\n20px"
+    ID_WIDTH_50PX           "50px\n50px"
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Нейтральный (по умолчанию) (неизвестное значение дополнительного кода языка: 0x3) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ZZZ)
+LANGUAGE LANG_NEUTRAL, 0x3
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#include ""res\\MyPaint.rc2""  // ресурсы, не редактируемые в Microsoft Visual C++\r\n"
+    "#include ""l.RUS\\afxres.rc""      // Стандартные компоненты\r\n"
+    "#include ""l.RUS\\afxprint.rc""    // ресурсы для печати/предварительного просмотра\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Нейтральный (по умолчанию) (неизвестное значение дополнительного кода языка: 0x3) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#include "res\MyPaint.rc2"  // ресурсы, не редактируемые в Microsoft Visual C++
+#include "l.RUS\afxres.rc"      // Стандартные компоненты
+#include "l.RUS\afxprint.rc"    // ресурсы для печати/предварительного просмотра
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
